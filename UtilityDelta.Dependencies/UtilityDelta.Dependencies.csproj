@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UtilityDelta.Domain.Dto\UtilityDelta.Domain.Dto.csproj" />
+    <ProjectReference Include="..\UtilityDelta.Domain.Interface\UtilityDelta.Domain.Interface.csproj" />
+    <ProjectReference Include="..\UtilityDelta.Domain\UtilityDelta.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
