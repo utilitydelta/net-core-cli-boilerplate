@@ -10,8 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UtilityDelta.Domain.Dto\UtilityDelta.Domain.Dto.csproj" />
-    <ProjectReference Include="..\UtilityDelta.Domain.Interface\UtilityDelta.Domain.Interface.csproj" />
+    <ProjectReference Include="..\UtilityDelta.Dependencies\UtilityDelta.Dependencies.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,16 @@
-﻿using System;
+﻿using UtilityDelta.Dependencies;
+using UtilityDelta.Domain.Interface;
 
 namespace UtilityDelta.Cli
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var scope = new Setup())
+            {
+                var verbs = scope.GetService<IVerbs>();
+            }
         }
     }
 }
