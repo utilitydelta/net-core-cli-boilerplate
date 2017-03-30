@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityDelta.Domain", "Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityDelta.Domain.Dto", "UtilityDelta.Domain.Dto\UtilityDelta.Domain.Dto.csproj", "{D93C2DAE-35D9-455C-8832-957B05C99F98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityDelta.Domain.Test", "UtilityDelta.Domain.Test\UtilityDelta.Domain.Test.csproj", "{2348C030-A324-49FB-9B67-0EA660FC6363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D93C2DAE-35D9-455C-8832-957B05C99F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93C2DAE-35D9-455C-8832-957B05C99F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93C2DAE-35D9-455C-8832-957B05C99F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2348C030-A324-49FB-9B67-0EA660FC6363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2348C030-A324-49FB-9B67-0EA660FC6363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2348C030-A324-49FB-9B67-0EA660FC6363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2348C030-A324-49FB-9B67-0EA660FC6363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
