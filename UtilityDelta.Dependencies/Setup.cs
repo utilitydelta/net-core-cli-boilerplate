@@ -1,4 +1,6 @@
-﻿using Autofac;
+﻿using System.Reflection;
+using Autofac;
+using UtilityDelta.Domain;
 using UtilityDelta.Domain.Interface;
 
 namespace UtilityDelta.Dependencies
@@ -11,19 +13,22 @@ namespace UtilityDelta.Dependencies
         {
             var builder = new ContainerBuilder();
 
-            //TODO: Register types here
+            //Register types here
+            builder.RegisterAssemblyTypes(typeof(CalculateEngine).GetTypeInfo().Assembly)
+                .AsImplementedInterfaces()
+                .SingleInstance();
 
             _scope = builder.Build().BeginLifetimeScope();
-        }
-
-        public T GetService<T>()
-        {
-            return _scope.Resolve<T>();
         }
 
         public void Dispose()
         {
             _scope.Dispose();
+        }
+
+        public T GetService<T>()
+        {
+            return _scope.Resolve<T>();
         }
     }
 }

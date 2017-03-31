@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "UtilityDelta.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "subtract -b 3343.22 --numbers-to-subtract 99999,99"
+    }
+  }
+}
