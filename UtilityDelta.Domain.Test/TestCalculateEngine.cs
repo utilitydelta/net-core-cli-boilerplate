@@ -1,4 +1,3 @@
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UtilityDelta.Domain.Test
@@ -21,7 +20,7 @@ namespace UtilityDelta.Domain.Test
         {
             var service = new CalculateEngine();
             var result = service.OneMinusAnother(.8, 5.1).Result;
-            
+
             Assert.AreEqual(result, -4.3);
         }
     }

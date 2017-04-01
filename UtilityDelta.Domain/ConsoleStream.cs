@@ -28,15 +28,15 @@ namespace UtilityDelta.Domain
             Console.SetError(m_streamThatGoesNoWhere);
         }
 
-        public void Dispose()
-        {
-            m_streamThatGoesNoWhere.Dispose();
-        }
-
         public string Read() => m_input.ReadLine();
 
         public void WriteError(string value) => m_error.WriteLine(value);
 
         public void WriteOutput(string value) => m_output.WriteLine(value);
+
+        public void Dispose()
+        {
+            m_streamThatGoesNoWhere.Dispose();
+        }
     }
 }

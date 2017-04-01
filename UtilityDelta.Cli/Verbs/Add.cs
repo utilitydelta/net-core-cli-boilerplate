@@ -8,7 +8,8 @@ namespace UtilityDelta.Cli.Verbs
     [Verb("add", HelpText = "Add some numbers together.")]
     public class Add : BaseOperation
     {
-        [Option('a', "numbers-to-add", Separator = ',', HelpText = "Add all these numbers to the base number, seperate them by a ','.")]
+        [Option('a', "numbers-to-add", Separator = ',',
+            HelpText = "Add all these numbers to the base number, seperate them by a ','.")]
         public IEnumerable<double> NumbersToAdd { get; set; }
 
         public override bool Process(IServiceResolver services)

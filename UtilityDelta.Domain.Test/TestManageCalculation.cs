@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using UtilityDelta.Domain.Dto;
@@ -29,20 +27,20 @@ namespace UtilityDelta.Domain.Test
         {
             var userCommunication = new Mock<IUserCommunication>();
             var calculateEngine = new Mock<ICalculateEngine>();
-            calculateEngine.Setup(x => x.OnePlusAnother(44, 443.334)).Returns(new DtoCalculationResult()
+            calculateEngine.Setup(x => x.OnePlusAnother(44, 443.334)).Returns(new DtoCalculationResult
             {
                 Result = 487.334
             });
-            calculateEngine.Setup(x => x.OnePlusAnother(487.334, 32.44)).Returns(new DtoCalculationResult()
+            calculateEngine.Setup(x => x.OnePlusAnother(487.334, 32.44)).Returns(new DtoCalculationResult
             {
                 Result = 519.774
             });
             var service = new ManageCalculation(userCommunication.Object, calculateEngine.Object);
-            var result = service.PerformOperation(new DtoCalculationInput()
+            var result = service.PerformOperation(new DtoCalculationInput
             {
                 InitialValue = 44,
                 Operation = DtoCalculationInput.OperationType.Add,
-                ValuesToProcess = new List<double>()
+                ValuesToProcess = new List<double>
                 {
                     443.334,
                     32.44
