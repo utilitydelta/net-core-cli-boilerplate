@@ -23,7 +23,7 @@ namespace UtilityDelta.Domain
 
             if (input.ValuesToProcess == null || !input.ValuesToProcess.Any())
             {
-                m_userCommunication.WriteErrorLine("No values to process!", false);
+                m_userCommunication.WriteErrorLine("No values to process!", true);
                 return false;
             }
 
