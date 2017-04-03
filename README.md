@@ -16,5 +16,3 @@ Unit testing to promote Test Driven Development (TDD).
 Common logic for handling of Console read, output and error streams.
 
 Handling Exit Codes to notify calling scripts of errors.
-
-Internationalisation support.
